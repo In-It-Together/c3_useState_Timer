@@ -23,6 +23,8 @@ The basic way of adding state to a component is as follows:
 - **access** the state value by using the state value
 - **update** the state value by using the state updater function
 
+[Here's a great resource](https://reactjs.org/docs/hooks-reference.html#usestate) if you want the more technical explanation for useState.
+
 We've provided some sample code in the starter code demonstrating how you might use the useState hook to implement a really simple timer. Here it is below:
 
 ```javascript
