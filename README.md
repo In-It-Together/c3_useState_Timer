@@ -25,7 +25,7 @@ The basic way of adding state to a component is as follows:
 
 We've provided some sample code in the starter code demonstrating how you might use the useState hook to implement a really simple timer. Here it is below:
 
-```
+```javascript
 // importing useState
 import React, { useState } from "react";
 
@@ -43,10 +43,7 @@ const ReferenceComponent = () => {
       <p>{stateValue}</p>
 
       {/* lets provide a button to update our state */}
-      <button
-        onClick={() =>
-            stateUpdater(previousState => previousState + 1)}
-      >
+      <button onClick={() => stateUpdater(previousState => previousState + 1)}>
         Click Me!
       </button>
     </div>
