@@ -20,7 +20,7 @@ The basic way of adding state to a component is as follows:
 
 - **import** useState in the component file
 - **set up** the **state value** and the **state updater function**, as well as the **initial value**
-- **display** the state value by using the state value
+- **access** the state value by using the state value
 - **update** the state value by using the state updater function
 
 We've provided some sample code in the starter code demonstrating how you might use the useState hook to implement a really simple timer. Here it is below:
