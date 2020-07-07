@@ -68,11 +68,12 @@ If you want to get the most out of this challenge:
 
 ## But... you already built a counter!
 
-Sometimes iterating on a simple design is a great way to learn. There are so many types of counters out there. Here are a couple ideas to consider when you iterate on our basic counter:
+Sometimes iterating on a simple design is a great way to learn. There are so many types of counters out there. Here are a couple ideas to consider when brainstorm some designs:
 
 - What if your counter updates every second?
 - What if something special happens based on a specific value of the counter?
 - What if you connect multiple counters so they use each others' value?
+- Are there any other types of values that would be fun to hold in state (booleans, strings etc.)?
 
 Be creative, be silly, and use the internet for inspiration! This is an opportunity to challenge yourself and have fun!
 
