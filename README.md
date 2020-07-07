@@ -1,4 +1,4 @@
-## React, State, and Timers
+## React, State, and Counters
 
 ## Challenge Scope
 
@@ -55,7 +55,7 @@ export default ReferenceComponent;
 
 ## The Challenge: Build Your Own Counter
 
-Now that you have a basic understanding of how state works and how we used it to build a really simple timer, we want you to flex your own creative developer muscles and **build your own timer**.
+Now that you have a basic understanding of how state works and how we used it to build a really simple counter, we want you to flex your own creative developer muscles and **build your own counter**.
 
 If you want to get the most out of this challenge:
 
@@ -68,7 +68,7 @@ If you want to get the most out of this challenge:
 
 ## But... you already built a counter!
 
-Sometimes iterating on a simple design is a great way to learn. There are so many types of timers out there. Here are a couple ideas to consider when you iterate on our basic timer:
+Sometimes iterating on a simple design is a great way to learn. There are so many types of counters out there. Here are a couple ideas to consider when you iterate on our basic counter:
 
 - What if your counter updates every second?
 - What if something special happens based on a specific value of the counter?
