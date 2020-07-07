@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React, State, and Timers
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Everything in a React Application is separated into components. Sometimes, in your application, you may want your component to have values that can update while the component is displayed on the page. These values are called **state**.
 
-### `yarn start`
+Examples of state in React are:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- An array of items you want to buy in an e-commerce store
+- A string containing a hex color value that updates the color of the webpage background
+- An integer holding a user's score in a game
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## React Hooks: Implementing Simple React State
 
-### `yarn test`
+The basic way of adding state to a component is as follows:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **import** useState in the component file
+- **set up** the **state value** and the **state updater function**, as well as the **initial value**
+- **display** the state value by using the state value
+- **update** the state value by using the state updater
 
-### `yarn build`
+We've provided some sample code in the starter code demonstrating how you might use the useState hook to implement a really simple timer. Here it is below:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+// importing useState
+import React, { useState } from "react";
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+const ReferenceComponent = () => {
+  // when component renders for first time
+  const initialValue = 0;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  // state declaration holding [value, updateFunction]
+  const [stateValue, stateUpdater] = useState(initialValue);
 
-### `yarn eject`
+  // component render
+  return (
+    <div>
+      {/* lets display our state in a p tag */}
+      <p>{stateValue}</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+      {/* lets provide a button to update our state */}
+      <button onClick={() => stateUpdater(previousState => previousState + 1)}>
+        Update State
+      </button>
+    </div>
+  );
+};
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+export default ReferenceComponent;
+```
