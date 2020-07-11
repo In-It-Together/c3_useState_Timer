@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import ReferenceComponent from './components/ReferenceComponent';
+import Pokedisplay from './components/Pokedisplay';
+
 
 function App() {
   return (
     <div className="App">
-      <ReferenceComponent />
+      <Pokedisplay />
     </div>
   );
 }

@@ -2,4 +2,34 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0% 0% 0% 0%;
+  text-align: center;
+  background-color: #CC0000;
+  color: #FFDE00;
+}
+
+h1.name {
+  text-transform: capitalize;
+}
+
+.next-button {
+  font-size:larger;
+  background-color: #CC0000;;
+  border-color: #FFDE00;
+  color: #FFDE00;
+}
+
+div.types ul {
+  list-style-type: none;
+  display: inline-block;
+  text-transform: capitalize;
+  padding: 0;
+}
+
+div.stats ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+div.stats li > span.stat-name {
+  text-transform: uppercase;
 }
