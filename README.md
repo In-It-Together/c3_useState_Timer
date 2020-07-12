@@ -81,4 +81,6 @@ Be creative, be silly, and use the internet for inspiration! This is an opportun
 
 ## Participant Submissions
 
-This event has not started yet! Come back later!
+![Image of Joe's Counter](./thumbnails/pokedex-counter.png)
+
+[Joe Avila](www.github.com/javila35) - [Pokedex](https://github.com/In-It-Together/c3_useState_Timer/tree/joe)
